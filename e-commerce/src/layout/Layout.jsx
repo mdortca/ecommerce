@@ -3,7 +3,7 @@ import Footer from './Footer';
 import PageContent from './PageContent'
 
 function Layout({ children }) {
-
+ 
 
   return (
     <>
