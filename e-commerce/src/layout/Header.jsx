@@ -1,4 +1,3 @@
-import Navbar from "./Navbar";
 import DarkNavbar from './DarkNavbar';
 import LightNavbar from './LightNavbar';
 
@@ -8,7 +7,9 @@ import LightNavbar from './LightNavbar';
 function Header() {
     return (
         <>
+        <div className="hidden sm:block">
             <DarkNavbar/>
+        </div>
             <LightNavbar/>
         </>
     )

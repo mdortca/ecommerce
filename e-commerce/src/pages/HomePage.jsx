@@ -1,14 +1,11 @@
 
-
 function HomePage() {
 
     return(
         <>
-        <Layout>
-            
-            <Header/>
 
-        </Layout>
+
+
         </>
     )
 }
