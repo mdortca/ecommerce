@@ -27,7 +27,7 @@ function LightNavbar() {
           </div>
 
           <div className="hidden sm:flex justify-between w-full">
-            <div className="flex gap-[15px]">
+            <div className="flex gap-[15px] pl-[94px]">
               <Link to="/" className="text-gray-700 hover:text-blue-600">
                 Home
               </Link>
