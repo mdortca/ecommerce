@@ -19,7 +19,7 @@ function DarkNavbar() {
         <div className="flex gap-[10px]">
           <p className="font-montserrat font-bold text-sm leading-6 tracking-[0.2px]">Follow us : </p>
           <Instagram />
-          <Youtube />
+          <Youtube /> {/* circlePlay */}
           <Facebook />
           <Twitter />
         </div>

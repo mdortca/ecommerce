@@ -6,7 +6,7 @@ function LightNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <nav className="flex flex-col gap-24 md:gap-44">
+      <nav className="flex flex-col gap-24 md:gap-44 p-1">
         <div className="flex flex-row items-center px-4 py-4 max-sm:justify-center gap-[85px]">
           <Link className="font-montserrat font-bold text-2xl leading-8 tracking-tight">
             Bandage
