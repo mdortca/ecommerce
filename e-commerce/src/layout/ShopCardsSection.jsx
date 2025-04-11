@@ -2,9 +2,9 @@
 
 function ShopCardsSection() {
     return(
-        <div>
+        <section>
             ShopCardsSection
-        </div>
+        </section>
     )
 }
 
