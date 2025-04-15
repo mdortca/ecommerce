@@ -43,11 +43,10 @@ function ProductCards() {
     }
   ];
 
-  return (
-    <div className="flex flex-col gap-[30px] w-full max-w-[360px] pt-13 pb-13 mx-auto ">
+  return (<>    <div className="flex flex-col gap-[30px] w-full max-w-[360px] pt-13 pb-13 mx-auto sm:flex-row">
       {products.map((product) => (
-        <div key={product.id} className="flex flex-col items-center bg-white sm:flex-row">
-          <div className="w-full h-[360px]">
+        <div key={product.id} className="flex flex-col items-center bg-white">
+          <div className="w-full h-[360px] sm:h-full">
             <img 
               src={product.img} 
               alt={product.title} 
@@ -82,7 +81,9 @@ function ProductCards() {
         </div>
       ))}
 
-      <div className="flex justify-center gap-[10px] mt-[30px]">
+      
+    </div>
+    <div className="flex justify-center gap-[10px] mt-[30px] pb-[31px]">
         <button className="px-[20px] py-[15px] text-[#BDBDBD] border border-[#E9E9E9] rounded-l-lg">
           First
         </button>
@@ -99,7 +100,7 @@ function ProductCards() {
           Next
         </button>
       </div>
-    </div>
+    </>
   );
 }
 

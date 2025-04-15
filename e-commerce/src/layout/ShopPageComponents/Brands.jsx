@@ -18,7 +18,7 @@ function Brands() {
   return (
     <section className="w-full bg-[#FAFAFA] py-[50px]">
       <div className="w-5/8 mx-auto">
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-[30px] flex-wrap">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-[76px] flex-wrap">
           {brands.map((brand) => (
             <div key={brand.id} className="grayscale hover:grayscale-0 transition-all duration-300">
               <img 
