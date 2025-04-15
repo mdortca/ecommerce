@@ -7,9 +7,21 @@ import {
   Twitter,
 } from "lucide-react";
 
-function DarkNavbar() {
+function DarkNavbar({mode = 'default'}) {
+  const baseClasses = 'py-2 px-4 text-white'
+  let modeClasses = ''
+  switch (mode) {
+    case 'shop':
+      modeClasses = 'bg-[#23856D]'
+      break
+    case 'contact':
+      modeClasses = 'bg-blue-900'
+      break
+    default:
+      modeClasses = 'bg-gray-800'
+  }
   return (
-    <div className="p-4 bg-[#252B42] text-white">
+    <div className={`py-4 px-4 ${baseClasses} ${modeClasses}`}>
       <div className="flex justify-between">
         <div className="flex gap-[10px]">
         <Phone /> <h6 className="font-montserrat font-bold text-sm leading-6 tracking-[0.2px]">(440) 240-4444</h6>
