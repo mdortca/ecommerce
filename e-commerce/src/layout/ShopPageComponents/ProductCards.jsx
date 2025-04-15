@@ -43,10 +43,10 @@ function ProductCards() {
     }
   ];
 
-  return (<>    <div className="flex flex-col gap-[30px] w-full max-w-[360px] pt-13 pb-13 mx-auto sm:flex-row">
+  return (<>    <div className="flex flex-col gap-[30px] w-full max-w-[360px] pt-13 pb-13 mx-auto sm:mx-[310px] sm:flex-row">
       {products.map((product) => (
         <div key={product.id} className="flex flex-col items-center bg-white">
-          <div className="w-full h-[360px] sm:h-full">
+          <div className="w-full sm:w-[200px] h-[360px] sm:h-full">
             <img 
               src={product.img} 
               alt={product.title} 
