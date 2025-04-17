@@ -10,12 +10,17 @@ function Header() {
     let mode = 'default';   
     if (location.pathname === '/shop') {
       mode = 'shop'
-    }
+    } 
+
+    const shouldShowDarkNavbar = !['/about', '/team'].includes(location.pathname);
     return (
         <>
+        {shouldShowDarkNavbar && (
         <div className="hidden sm:block">
             <DarkNavbar mode={mode}/>
         </div>
+        )
+        }
             <LightNavbar/>
 
         </>
