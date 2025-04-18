@@ -12,7 +12,7 @@ function Header() {
       mode = 'shop'
     } 
 
-    const shouldShowDarkNavbar = !['/about', '/team'].includes(location.pathname);
+    const shouldShowDarkNavbar = !['/about', '/team', '/contact', '/pricing'].includes(location.pathname);
     return (
         <>
         {shouldShowDarkNavbar && (
